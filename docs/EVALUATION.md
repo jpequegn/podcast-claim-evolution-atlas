@@ -18,8 +18,6 @@ The evidence, claim candidates, imported document and report are local under dat
 
 All real claims remain unapproved. Unknown scope is explicit, and the deterministic rules abstain instead of turning semantic similarity into contradiction. These 30 candidates are not the source issue's requested 60 human-reviewed claims. Operator validation and a second independent labeling pass remain necessary before claiming that acceptance criterion or a real-world relationship-quality result.
 
-## Evaluation limits
-
 ## Implementation checks
 
 The final local suite has 25 native Rust tests, two Python exporter tests including a Rust import/tamper roundtrip, and one wasm-bindgen test. Native and WASM graph/evaluation outputs match exactly. Browser WASM also returns the 30 expected gold labels, including nine abstentions.

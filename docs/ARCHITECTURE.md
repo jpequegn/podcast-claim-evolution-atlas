@@ -31,7 +31,7 @@ This is a local single-operator document protocol. A person with file access can
 
 500 claims, 1000 evidence records, 5000 candidate pairs, 2000 reviews, 2 MB bundle inputs, 4 MB atlas documents. Exports select at most 20 episodes and 1000 segments. Larger corpora should be split into topical bundles. Limits stop processing rather than silently truncate.
 
-The exporter fails if a selected episode is missing, the DB changes, timestamps are invalid after rounding, output exists or the selection is too large. Missing/zero-width source timestamps become untimed transcript evidence, never fabricated times. Full transcript text is not exported; small excerpts and source references permit later verification.
+The exporter fails if a selected episode is missing, the DB changes, output exists or the selection is too large. Missing, zero-width or unusable rounded timestamps become untimed transcript evidence, never fabricated times. Full transcript text is not exported; small excerpts and source references permit later verification.
 
 Local native files are created mode 0600; export directories mode 0700. Retention and sensitivity are metadata, not encryption or automatic deletion. Browser downloads follow browser/OS permissions. The Vite development server exposes development assets on loopback; do not publish it or expose it to LAN access.
 
@@ -50,4 +50,3 @@ The shipped local pilot has 30 unreviewed candidates, including three untimed re
 - [Rust WASM target](https://doc.rust-lang.org/stable/rustc/platform-support/wasm32-unknown-unknown.html)
 - [wasm-pack build](https://rustwasm.github.io/docs/wasm-pack/commands/build.html)
 - [W3C PROV-O](https://www.w3.org/TR/prov-o/): entity, activity, attribution and derivation informed the contracts; this is not a full RDF implementation.
-
