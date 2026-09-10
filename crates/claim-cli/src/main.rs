@@ -16,6 +16,10 @@ struct Args {
 }
 #[derive(Subcommand)]
 enum Command {
+    Evaluate {
+        input: PathBuf,
+        gold: PathBuf,
+    },
     Init {
         bundle: PathBuf,
         #[arg(long)]
@@ -91,6 +95,14 @@ fn write(path: &Path, s: &str) -> Result<()> {
 }
 fn run() -> Result<()> {
     match Args::parse().command {
+        Command::Evaluate { input, gold } => {
+            let pairs =
+                serde_json::from_str::<Vec<claim_core::evaluation::GoldPair>>(&read(&gold)?)?;
+            println!(
+                "{}",
+                json(&claim_core::evaluation::evaluate(&load(&input)?, &pairs)?)?
+            );
+        }
         Command::Init { bundle, out } => write(
             &out,
             &json(&Document::new(Bundle::parse(&read(&bundle)?)?))?,

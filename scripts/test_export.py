@@ -17,7 +17,7 @@ class ExportTests(unittest.TestCase):
             export(db,[1],root/"out")
             self.assertEqual(before,file_hash(db))
             rows=[json.loads(x) for x in (root/"out/evidence.jsonl").read_text().splitlines()]
-            self.assertEqual(rows[0]["kind"],"summary_only")
+            self.assertEqual(rows[0]["kind"],"transcript_untimed")
             self.assertEqual(rows[1]["kind"],"transcript")
             with self.assertRaises(ValueError): export(db,[1],root/"out")
             with self.assertRaises(ValueError): export(db,[2],root/"missing")
@@ -26,4 +26,3 @@ class ExportTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as d:
             with self.assertRaises(ValueError): export(Path(d)/"absent",[1],Path(d)/"out")
 if __name__=="__main__": unittest.main()
-
