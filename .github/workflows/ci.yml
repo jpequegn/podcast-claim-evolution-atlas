@@ -8,6 +8,7 @@ jobs:
       - uses: dtolnay/rust-toolchain@1.92.0
         with:
           components: rustfmt, clippy
+          targets: wasm32-unknown-unknown
       - uses: Swatinem/rust-cache@v2
       - run: cargo fmt --all --check
       - run: cargo clippy --workspace --all-targets --locked -- -D warnings
@@ -17,3 +18,12 @@ jobs:
           python-version: '3.12'
       - run: pip install duckdb==1.4.1
       - run: python -m unittest discover -s scripts -p 'test_*.py'
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - run: cargo install wasm-pack --version 0.13.1 --locked
+      - run: npm ci
+      - run: npm run build
+      - run: npm run parity
+      - run: wasm-pack test --node crates/claim-wasm
