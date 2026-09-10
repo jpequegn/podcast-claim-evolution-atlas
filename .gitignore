@@ -1,0 +1,12 @@
+/target/
+/node_modules/
+/web/pkg/
+/web/dist/
+/data/
+/reports/
+/test-results/
+/playwright-report/
+__pycache__/
+.venv/
+.DS_Store
+
