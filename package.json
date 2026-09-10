@@ -1,0 +1,20 @@
+{
+  "name": "podcast-claim-evolution-atlas",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite web --host 127.0.0.1",
+    "wasm": "wasm-pack build crates/claim-wasm --target web --out-dir ../../web/pkg",
+    "build": "npm run wasm && tsc --noEmit && vite build web",
+    "parity": "node scripts/parity.mjs"
+  },
+  "dependencies": {
+    "lucide": "0.468.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.9.6",
+    "typescript": "~6.0.2",
+    "vite": "^8.1.1"
+  }
+}
