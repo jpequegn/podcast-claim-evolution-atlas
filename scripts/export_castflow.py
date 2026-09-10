@@ -63,12 +63,12 @@ def export(db, ids, out, segments=None):
     manifest = {"version": 1, "adapter": "castflow-readonly-v1", "database_sha256": before,
                 "episode_ids": sorted(ids), "segment_ids": sorted(r[5] for r in rows),
                 "query_sha256": digest(QUERY), "record_count": len(rows)}
-    export_hash = digest(manifest)
     evidence = []
     for eid, title, source, uri, day, tid, speaker, start, end, raw in rows:
         # Missing or zero-width timestamps never become fabricated transcript evidence.
         valid = (start is not None and end is not None and math.isfinite(start)
-                 and math.isfinite(end) and 0 <= start < end <= 86400)
+                 and math.isfinite(end) and 0 <= start < end <= 86400
+                 and round(start*1000) < round(end*1000))
         if not day or not raw or not uri:
             raise ValueError(f"Missing source metadata for segment {tid}")
         excerpt = " ".join(raw.split())[:180]
@@ -77,7 +77,11 @@ def export(db, ids, out, segments=None):
                          "uri": uri, "asserted_at": str(day), "kind": "transcript" if valid else "transcript_untimed",
                          "segment_id": str(tid), "start_ms": round(start*1000) if valid else None,
                          "end_ms": round(end*1000) if valid else None, "excerpt": excerpt,
-                         "segment_digest": digest(raw), "export_digest": export_hash})
+                         "segment_digest": digest(raw), "export_digest": ""})
+    manifest["evidence_digest"] = digest(evidence)
+    export_hash = digest(manifest)
+    for record in evidence:
+        record["export_digest"] = export_hash
     out.mkdir(mode=0o700, parents=True)
     private_write(out / "manifest.json", json.dumps(manifest, indent=2))
     private_write(out / "evidence.jsonl", "".join(json.dumps(e, ensure_ascii=False)+"\n" for e in evidence))

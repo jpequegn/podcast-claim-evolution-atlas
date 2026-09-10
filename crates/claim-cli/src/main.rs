@@ -97,7 +97,7 @@ fn run() -> Result<()> {
     match Args::parse().command {
         Command::Evaluate { input, gold } => {
             let pairs =
-                serde_json::from_str::<Vec<claim_core::evaluation::GoldPair>>(&read(&gold)?)?;
+                claim_core::strict::parse::<Vec<claim_core::evaluation::GoldPair>>(&read(&gold)?)?;
             println!(
                 "{}",
                 json(&claim_core::evaluation::evaluate(&load(&input)?, &pairs)?)?
@@ -136,7 +136,7 @@ fn run() -> Result<()> {
             request,
             out,
         } => {
-            let r: ReviewRequest = serde_json::from_str(&read(&request)?)?;
+            let r: ReviewRequest = claim_core::strict::parse(&read(&request)?)?;
             write(&out, &json(&load(&input)?.review(r)?)?)?;
         }
         Command::Timeline { input, subject } => {

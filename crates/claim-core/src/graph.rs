@@ -66,7 +66,7 @@ impl Document {
     }
     pub fn parse(input: &str) -> Result<Self> {
         require(input.len() <= 4_000_000, "document exceeds 4 MB")?;
-        let d: Self = serde_json::from_str(input).map_err(|e| Error(e.to_string()))?;
+        let d: Self = crate::strict::parse(input)?;
         d.graph()?;
         Ok(d)
     }
@@ -117,6 +117,22 @@ impl Document {
             "reviewer and reason required",
         )?;
         date(&r.at)?;
+        require(
+            r.evidence_ids
+                .iter()
+                .collect::<std::collections::BTreeSet<_>>()
+                .len()
+                == r.evidence_ids.len(),
+            "duplicate review evidence",
+        )?;
+        require(
+            self.bundle
+                .evidence
+                .iter()
+                .filter(|e| r.evidence_ids.contains(&e.id))
+                .all(|e| e.asserted_at <= r.at),
+            "review predates evidence",
+        )?;
         require(
             r.elapsed_seconds.is_none_or(|s| s <= 86400),
             "review time out of bounds",

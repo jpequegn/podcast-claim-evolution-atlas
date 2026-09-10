@@ -16,7 +16,7 @@ pub fn review(input: &str, request: &str) -> Result<String, JsValue> {
     }
     let d = Document::parse(input).map_err(|e| JsValue::from_str(&e.to_string()))?;
     let r: ReviewRequest =
-        serde_json::from_str(request).map_err(|e| JsValue::from_str(&e.to_string()))?;
+        claim_core::strict::parse(request).map_err(|e| JsValue::from_str(&e.to_string()))?;
     serde_json::to_string(&d.review(r).map_err(|e| JsValue::from_str(&e.to_string()))?)
         .map_err(|e| JsValue::from_str(&e.to_string()))
 }
@@ -27,7 +27,7 @@ pub fn evaluate(input: &str, gold: &str) -> Result<String, JsValue> {
     }
     let d = Document::parse(input).map_err(|e| JsValue::from_str(&e.to_string()))?;
     let pairs: Vec<evaluation::GoldPair> =
-        serde_json::from_str(gold).map_err(|e| JsValue::from_str(&e.to_string()))?;
+        claim_core::strict::parse(gold).map_err(|e| JsValue::from_str(&e.to_string()))?;
     serde_json::to_string(
         &evaluation::evaluate(&d, &pairs).map_err(|e| JsValue::from_str(&e.to_string()))?,
     )

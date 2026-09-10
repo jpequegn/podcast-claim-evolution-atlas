@@ -148,6 +148,7 @@ function detail() {
   return `<span class="eyebrow">${esc(c.topic)} / ${esc(graph.claims[c.id])}</span><h2>${esc(c.statement)}</h2><dl><dt>Subject</dt><dd>${esc(c.subject)}</dd><dt>Modality</dt><dd>${esc(c.modality)} / ${esc(c.stance)}</dd><dt>Valid time</dt><dd>${c.scope.valid_from} to ${c.scope.valid_to}</dd><dt>Population</dt><dd>${esc(c.scope.population)}</dd><dt>System</dt><dd>${esc(c.scope.system)}</dd><dt>Definition</dt><dd>${esc(c.scope.definition)}</dd><dt>Conditions</dt><dd>${esc(c.scope.conditions.join(", ") || "None stated")}</dd><dt>Extractor</dt><dd>${esc(c.extractor)}</dd></dl>${evidence(c).map(evidencePanel).join("")}${reviewForm(c.id, graph.claims[c.id] === "candidate" ? ["approve_claim", "reject_claim"] : [], c.evidence_ids)}`;
 }
 function render() {
+  const mainScroll = document.querySelector("main")?.scrollTop || 0;
   const rows = visible().sort(
     (a, b) => day(a).localeCompare(day(b)) || a.id.localeCompare(b.id),
   );
@@ -155,7 +156,8 @@ function render() {
   const edges = graph.edges.filter(
     (e) => ids.has(e.proposal.left) && ids.has(e.proposal.right),
   );
-  if (!selected && rows[0]) selected = rows[0].id;
+  if (!ids.has(selected)) selected = rows[0]?.id || "";
+  if (!edges.some((e) => e.proposal.id === selectedEdge)) selectedEdge = "";
   const synthetic = doc.bundle.evidence.every((e) => e.kind === "synthetic");
   app.innerHTML = `<header><div><span class="eyebrow">CASTFLOW / RESEARCH</span><h1>Claim Evolution Atlas</h1></div><div class="header-actions"><span class="local">${synthetic ? "Synthetic corpus" : "Local evidence"}</span><button id="import" class="icon" title="Open local atlas document" aria-label="Open local atlas document"><i data-lucide="upload"></i></button><button id="export" class="icon" title="Download atlas document" aria-label="Download atlas document"><i data-lucide="download"></i></button><input type="file" id="file" accept=".json" hidden></div></header><section class="summary"><div><h2>${esc(doc.bundle.title)}</h2><span>${doc.bundle.claims.length} claims · ${new Set(doc.bundle.evidence.map((e) => e.episode_id)).size} episodes · ${new Set(doc.bundle.evidence.map((e) => e.source)).size} source labels</span></div><div class="totals"><strong>${Object.values(graph.claims).filter((s) => s === "approved").length}<small>Approved claims</small></strong><strong>${graph.edges.filter((e) => e.relation === "CONTRADICTS" && e.status === "accepted").length}<small>Reviewed disputes</small></strong><strong>${graph.revision}<small>Review decisions</small></strong></div></section><div class="toolbar"><label class="search"><span>Search</span><input id="search" type="search" value="${esc(filters.search)}" placeholder="Find a claim"></label>${select(
     "topic",
@@ -185,6 +187,7 @@ function render() {
     },
   });
   if (tab === "timeline") draw(rows);
+  document.querySelector("main")!.scrollTop = mainScroll;
   document
     .querySelector("#import")!
     .addEventListener("click", () =>
@@ -245,12 +248,16 @@ function render() {
       selected = el.dataset.claim!;
       selectedEdge = "";
       render();
+      if (innerWidth <= 760)
+        document.querySelector("aside")!.scrollIntoView({ behavior: "smooth" });
     }),
   );
   document.querySelectorAll<HTMLElement>("[data-edge]").forEach((el) =>
     el.addEventListener("click", () => {
       selectedEdge = el.dataset.edge!;
       render();
+      if (innerWidth <= 760)
+        document.querySelector("aside")!.scrollIntoView({ behavior: "smooth" });
     }),
   );
   document.querySelectorAll<HTMLElement>("[data-tab]").forEach((el) =>
