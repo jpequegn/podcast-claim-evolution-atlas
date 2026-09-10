@@ -230,10 +230,7 @@ impl Claim {
         match &self.value {
             Value::Number { decimal, unit, .. } => {
                 require(text(unit, 20), "unit required")?;
-                require(
-                    decimal.len() <= 20 && decimal.parse::<f64>().is_ok_and(|v| v.is_finite()),
-                    "invalid number",
-                )?;
+                require(crate::rules::decimal(decimal).is_ok(), "invalid number")?;
             }
             Value::Text { value } => require(text(value, 400), "invalid text value")?,
             Value::Boolean { .. } => {}
