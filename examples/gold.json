@@ -1,0 +1,152 @@
+[
+  {
+    "left": "agent-harness-0-a",
+    "right": "agent-harness-0-b",
+    "expected": "CONTRADICTS"
+  },
+  {
+    "left": "agent-harness-1-a",
+    "right": "agent-harness-1-b",
+    "expected": "REPEATS"
+  },
+  {
+    "left": "agent-harness-2-a",
+    "right": "agent-harness-2-b",
+    "expected": "TEMPORAL_CHANGE"
+  },
+  {
+    "left": "agent-harness-3-a",
+    "right": "agent-harness-3-b",
+    "expected": "DEFINITION_MISMATCH"
+  },
+  {
+    "left": "agent-harness-4-a",
+    "right": "agent-harness-4-b",
+    "expected": "REFINES"
+  },
+  {
+    "left": "agent-harness-5-a",
+    "right": "agent-harness-5-b",
+    "expected": "NARROWS"
+  },
+  {
+    "left": "agent-harness-6-a",
+    "right": "agent-harness-6-b",
+    "expected": "BROADENS"
+  },
+  {
+    "left": "agent-harness-7-a",
+    "right": "agent-harness-7-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "agent-harness-8-a",
+    "right": "agent-harness-8-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "agent-harness-9-a",
+    "right": "agent-harness-9-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "finance-0-a",
+    "right": "finance-0-b",
+    "expected": "CONTRADICTS"
+  },
+  {
+    "left": "finance-1-a",
+    "right": "finance-1-b",
+    "expected": "REPEATS"
+  },
+  {
+    "left": "finance-2-a",
+    "right": "finance-2-b",
+    "expected": "TEMPORAL_CHANGE"
+  },
+  {
+    "left": "finance-3-a",
+    "right": "finance-3-b",
+    "expected": "DEFINITION_MISMATCH"
+  },
+  {
+    "left": "finance-4-a",
+    "right": "finance-4-b",
+    "expected": "REFINES"
+  },
+  {
+    "left": "finance-5-a",
+    "right": "finance-5-b",
+    "expected": "NARROWS"
+  },
+  {
+    "left": "finance-6-a",
+    "right": "finance-6-b",
+    "expected": "BROADENS"
+  },
+  {
+    "left": "finance-7-a",
+    "right": "finance-7-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "finance-8-a",
+    "right": "finance-8-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "finance-9-a",
+    "right": "finance-9-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "health-0-a",
+    "right": "health-0-b",
+    "expected": "CONTRADICTS"
+  },
+  {
+    "left": "health-1-a",
+    "right": "health-1-b",
+    "expected": "REPEATS"
+  },
+  {
+    "left": "health-2-a",
+    "right": "health-2-b",
+    "expected": "TEMPORAL_CHANGE"
+  },
+  {
+    "left": "health-3-a",
+    "right": "health-3-b",
+    "expected": "DEFINITION_MISMATCH"
+  },
+  {
+    "left": "health-4-a",
+    "right": "health-4-b",
+    "expected": "REFINES"
+  },
+  {
+    "left": "health-5-a",
+    "right": "health-5-b",
+    "expected": "NARROWS"
+  },
+  {
+    "left": "health-6-a",
+    "right": "health-6-b",
+    "expected": "BROADENS"
+  },
+  {
+    "left": "health-7-a",
+    "right": "health-7-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "health-8-a",
+    "right": "health-8-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  },
+  {
+    "left": "health-9-a",
+    "right": "health-9-b",
+    "expected": "INSUFFICIENT_EVIDENCE"
+  }
+]

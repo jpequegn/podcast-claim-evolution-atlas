@@ -1,0 +1,2925 @@
+{
+  "version": 1,
+  "title": "Synthetic policy evolution corpus",
+  "claims": [
+    {
+      "id": "agent-harness-0-a",
+      "statement": "Synthetic agent-harness policy scenario 1: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-0",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-0-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-0-b",
+      "statement": "Synthetic agent-harness policy: opposite assertion under identical scope.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-0",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-0-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-1-a",
+      "statement": "Synthetic agent-harness policy scenario 2: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-1",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-1-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-1-b",
+      "statement": "Synthetic agent-harness policy: same assertion repeated.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-1",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-1-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-2-a",
+      "statement": "Synthetic agent-harness policy scenario 3: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-2",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-2-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-2-b",
+      "statement": "Synthetic assertion applies in a later year.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-2",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2027-01-01",
+        "valid_to": "2027-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-2-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-3-a",
+      "statement": "Synthetic agent-harness policy scenario 4: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-3",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-3-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-3-b",
+      "statement": "Synthetic success has a different definition.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-3",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v2",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-3-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-4-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-4",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-4-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-4-b",
+      "statement": "Synthetic latency is below 500 milliseconds.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-4",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-4-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-5-a",
+      "statement": "Synthetic agent-harness policy scenario 6: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-5",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-5-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-5-b",
+      "statement": "Synthetic assertion holds only after a warm start.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-5",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-5-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-6-a",
+      "statement": "Synthetic agent-harness policy scenario 7: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-6",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-6-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-6-b",
+      "statement": "Synthetic assertion removes the warm-start condition.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-6",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-6-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-7-a",
+      "statement": "Synthetic agent-harness policy scenario 8: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-7",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-7-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-7-b",
+      "statement": "Synthetic assertion concerns a different cohort.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-7",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "different-cohort",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-7-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-8-a",
+      "statement": "Synthetic agent-harness policy scenario 9: baseline assertion.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-8",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-8-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-8-b",
+      "statement": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-8",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "quoted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-8-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-9-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-9",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-9-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "agent-harness-9-b",
+      "statement": "Synthetic latency is above 500 milliseconds.",
+      "subject": "agent-harness-policy",
+      "predicate": "scenario-9",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "gt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-agent-harness-9-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-0-a",
+      "statement": "Synthetic finance policy scenario 1: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-0",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-0-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-0-b",
+      "statement": "Synthetic finance policy: opposite assertion under identical scope.",
+      "subject": "finance-policy",
+      "predicate": "scenario-0",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-0-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-1-a",
+      "statement": "Synthetic finance policy scenario 2: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-1",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-1-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-1-b",
+      "statement": "Synthetic finance policy: same assertion repeated.",
+      "subject": "finance-policy",
+      "predicate": "scenario-1",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-1-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-2-a",
+      "statement": "Synthetic finance policy scenario 3: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-2",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-2-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-2-b",
+      "statement": "Synthetic assertion applies in a later year.",
+      "subject": "finance-policy",
+      "predicate": "scenario-2",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2027-01-01",
+        "valid_to": "2027-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-2-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-3-a",
+      "statement": "Synthetic finance policy scenario 4: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-3",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-3-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-3-b",
+      "statement": "Synthetic success has a different definition.",
+      "subject": "finance-policy",
+      "predicate": "scenario-3",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v2",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-3-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-4-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "finance-policy",
+      "predicate": "scenario-4",
+      "topic": "finance",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-4-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-4-b",
+      "statement": "Synthetic latency is below 500 milliseconds.",
+      "subject": "finance-policy",
+      "predicate": "scenario-4",
+      "topic": "finance",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-4-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-5-a",
+      "statement": "Synthetic finance policy scenario 6: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-5",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-5-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-5-b",
+      "statement": "Synthetic assertion holds only after a warm start.",
+      "subject": "finance-policy",
+      "predicate": "scenario-5",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-5-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-6-a",
+      "statement": "Synthetic finance policy scenario 7: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-6",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-6-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-6-b",
+      "statement": "Synthetic assertion removes the warm-start condition.",
+      "subject": "finance-policy",
+      "predicate": "scenario-6",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-6-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-7-a",
+      "statement": "Synthetic finance policy scenario 8: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-7",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-7-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-7-b",
+      "statement": "Synthetic assertion concerns a different cohort.",
+      "subject": "finance-policy",
+      "predicate": "scenario-7",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "different-cohort",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-7-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-8-a",
+      "statement": "Synthetic finance policy scenario 9: baseline assertion.",
+      "subject": "finance-policy",
+      "predicate": "scenario-8",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-8-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-8-b",
+      "statement": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "subject": "finance-policy",
+      "predicate": "scenario-8",
+      "topic": "finance",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "quoted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-8-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-9-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "finance-policy",
+      "predicate": "scenario-9",
+      "topic": "finance",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-9-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "finance-9-b",
+      "statement": "Synthetic latency is above 500 milliseconds.",
+      "subject": "finance-policy",
+      "predicate": "scenario-9",
+      "topic": "finance",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "gt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-finance-9-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-0-a",
+      "statement": "Synthetic health policy scenario 1: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-0",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-0-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-0-b",
+      "statement": "Synthetic health policy: opposite assertion under identical scope.",
+      "subject": "health-policy",
+      "predicate": "scenario-0",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-0-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-1-a",
+      "statement": "Synthetic health policy scenario 2: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-1",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-1-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-1-b",
+      "statement": "Synthetic health policy: same assertion repeated.",
+      "subject": "health-policy",
+      "predicate": "scenario-1",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-1-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-2-a",
+      "statement": "Synthetic health policy scenario 3: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-2",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-2-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-2-b",
+      "statement": "Synthetic assertion applies in a later year.",
+      "subject": "health-policy",
+      "predicate": "scenario-2",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2027-01-01",
+        "valid_to": "2027-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-2-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-3-a",
+      "statement": "Synthetic health policy scenario 4: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-3",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-3-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-3-b",
+      "statement": "Synthetic success has a different definition.",
+      "subject": "health-policy",
+      "predicate": "scenario-3",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v2",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-3-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-4-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "health-policy",
+      "predicate": "scenario-4",
+      "topic": "health",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-4-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-4-b",
+      "statement": "Synthetic latency is below 500 milliseconds.",
+      "subject": "health-policy",
+      "predicate": "scenario-4",
+      "topic": "health",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-4-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-5-a",
+      "statement": "Synthetic health policy scenario 6: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-5",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-5-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-5-b",
+      "statement": "Synthetic assertion holds only after a warm start.",
+      "subject": "health-policy",
+      "predicate": "scenario-5",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-5-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-6-a",
+      "statement": "Synthetic health policy scenario 7: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-6",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [
+          "warm-start"
+        ],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-6-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-6-b",
+      "statement": "Synthetic assertion removes the warm-start condition.",
+      "subject": "health-policy",
+      "predicate": "scenario-6",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-6-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-7-a",
+      "statement": "Synthetic health policy scenario 8: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-7",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-7-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-7-b",
+      "statement": "Synthetic assertion concerns a different cohort.",
+      "subject": "health-policy",
+      "predicate": "scenario-7",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "different-cohort",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-7-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-8-a",
+      "statement": "Synthetic health policy scenario 9: baseline assertion.",
+      "subject": "health-policy",
+      "predicate": "scenario-8",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-8-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-8-b",
+      "statement": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "subject": "health-policy",
+      "predicate": "scenario-8",
+      "topic": "health",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "quoted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-8-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-9-a",
+      "statement": "Synthetic latency is below one second.",
+      "subject": "health-policy",
+      "predicate": "scenario-9",
+      "topic": "health",
+      "value": {
+        "kind": "number",
+        "decimal": "1",
+        "unit": "s",
+        "comparator": "lt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-9-a"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "health-9-b",
+      "statement": "Synthetic latency is above 500 milliseconds.",
+      "subject": "health-policy",
+      "predicate": "scenario-9",
+      "topic": "health",
+      "value": {
+        "kind": "number",
+        "decimal": "500",
+        "unit": "ms",
+        "comparator": "gt"
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-health-9-b"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ev-agent-harness-0-a",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-0-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 1: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-0-b",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-0-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy: opposite assertion under identical scope.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-1-a",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-1-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 2: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-1-b",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-1-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy: same assertion repeated.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-2-a",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-2-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 3: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-2-b",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-2-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion applies in a later year.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-3-a",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-3-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 4: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-3-b",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-3-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic success has a different definition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-4-a",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-4-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-4-b",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-4-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-5-a",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-5-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 6: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-5-b",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-5-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion holds only after a warm start.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-6-a",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-6-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 7: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-6-b",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-6-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion removes the warm-start condition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-7-a",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-7-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 8: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-7-b",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-7-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion concerns a different cohort.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-8-a",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-8-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic agent-harness policy scenario 9: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-8-b",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-8-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-9-a",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-01",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-9-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-agent-harness-9-b",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-02",
+      "kind": "synthetic",
+      "segment_id": "agent-harness-9-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is above 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-0-a",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-01",
+      "kind": "synthetic",
+      "segment_id": "finance-0-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 1: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-0-b",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-02",
+      "kind": "synthetic",
+      "segment_id": "finance-0-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy: opposite assertion under identical scope.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-1-a",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-01",
+      "kind": "synthetic",
+      "segment_id": "finance-1-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 2: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-1-b",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-02",
+      "kind": "synthetic",
+      "segment_id": "finance-1-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy: same assertion repeated.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-2-a",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-01",
+      "kind": "synthetic",
+      "segment_id": "finance-2-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 3: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-2-b",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-02",
+      "kind": "synthetic",
+      "segment_id": "finance-2-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion applies in a later year.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-3-a",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-01",
+      "kind": "synthetic",
+      "segment_id": "finance-3-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 4: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-3-b",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-02",
+      "kind": "synthetic",
+      "segment_id": "finance-3-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic success has a different definition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-4-a",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-01",
+      "kind": "synthetic",
+      "segment_id": "finance-4-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-4-b",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-02",
+      "kind": "synthetic",
+      "segment_id": "finance-4-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-5-a",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-01",
+      "kind": "synthetic",
+      "segment_id": "finance-5-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 6: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-5-b",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-02",
+      "kind": "synthetic",
+      "segment_id": "finance-5-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion holds only after a warm start.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-6-a",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-01",
+      "kind": "synthetic",
+      "segment_id": "finance-6-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 7: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-6-b",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-02",
+      "kind": "synthetic",
+      "segment_id": "finance-6-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion removes the warm-start condition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-7-a",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-01",
+      "kind": "synthetic",
+      "segment_id": "finance-7-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 8: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-7-b",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-02",
+      "kind": "synthetic",
+      "segment_id": "finance-7-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion concerns a different cohort.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-8-a",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-01",
+      "kind": "synthetic",
+      "segment_id": "finance-8-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic finance policy scenario 9: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-8-b",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-02",
+      "kind": "synthetic",
+      "segment_id": "finance-8-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-9-a",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-01",
+      "kind": "synthetic",
+      "segment_id": "finance-9-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-finance-9-b",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-02",
+      "kind": "synthetic",
+      "segment_id": "finance-9-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is above 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-0-a",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-01",
+      "kind": "synthetic",
+      "segment_id": "health-0-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 1: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-0-b",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic policy session 1",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-02",
+      "kind": "synthetic",
+      "segment_id": "health-0-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy: opposite assertion under identical scope.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-1-a",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-01",
+      "kind": "synthetic",
+      "segment_id": "health-1-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 2: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-1-b",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic policy session 2",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-2",
+      "asserted_at": "2026-02-02",
+      "kind": "synthetic",
+      "segment_id": "health-1-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy: same assertion repeated.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-2-a",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-01",
+      "kind": "synthetic",
+      "segment_id": "health-2-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 3: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-2-b",
+      "episode_id": "fixture-3",
+      "episode_title": "Synthetic policy session 3",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-3",
+      "asserted_at": "2026-03-02",
+      "kind": "synthetic",
+      "segment_id": "health-2-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion applies in a later year.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-3-a",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-01",
+      "kind": "synthetic",
+      "segment_id": "health-3-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 4: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-3-b",
+      "episode_id": "fixture-4",
+      "episode_title": "Synthetic policy session 4",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-4",
+      "asserted_at": "2026-04-02",
+      "kind": "synthetic",
+      "segment_id": "health-3-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic success has a different definition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-4-a",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-01",
+      "kind": "synthetic",
+      "segment_id": "health-4-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-4-b",
+      "episode_id": "fixture-5",
+      "episode_title": "Synthetic policy session 5",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-5",
+      "asserted_at": "2026-05-02",
+      "kind": "synthetic",
+      "segment_id": "health-4-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-5-a",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-01",
+      "kind": "synthetic",
+      "segment_id": "health-5-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 6: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-5-b",
+      "episode_id": "fixture-6",
+      "episode_title": "Synthetic policy session 6",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-6",
+      "asserted_at": "2026-06-02",
+      "kind": "synthetic",
+      "segment_id": "health-5-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion holds only after a warm start.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-6-a",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-01",
+      "kind": "synthetic",
+      "segment_id": "health-6-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 7: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-6-b",
+      "episode_id": "fixture-7",
+      "episode_title": "Synthetic policy session 7",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-7",
+      "asserted_at": "2026-07-02",
+      "kind": "synthetic",
+      "segment_id": "health-6-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion removes the warm-start condition.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-7-a",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-01",
+      "kind": "synthetic",
+      "segment_id": "health-7-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 8: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-7-b",
+      "episode_id": "fixture-8",
+      "episode_title": "Synthetic policy session 8",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-8",
+      "asserted_at": "2026-08-02",
+      "kind": "synthetic",
+      "segment_id": "health-7-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic assertion concerns a different cohort.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-8-a",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab C",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-01",
+      "kind": "synthetic",
+      "segment_id": "health-8-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic health policy scenario 9: baseline assertion.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-8-b",
+      "episode_id": "fixture-9",
+      "episode_title": "Synthetic policy session 9",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-9",
+      "asserted_at": "2026-09-02",
+      "kind": "synthetic",
+      "segment_id": "health-8-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic speaker quotes an opposing claim without asserting it.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-9-a",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-01",
+      "kind": "synthetic",
+      "segment_id": "health-9-a",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is below one second.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-health-9-b",
+      "episode_id": "fixture-10",
+      "episode_title": "Synthetic policy session 10",
+      "source": "Invented lab B",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-10",
+      "asserted_at": "2026-10-02",
+      "kind": "synthetic",
+      "segment_id": "health-9-b",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic latency is above 500 milliseconds.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "aliases": {}
+}

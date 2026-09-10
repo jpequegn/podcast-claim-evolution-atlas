@@ -74,7 +74,7 @@ def export(db, ids, out, segments=None):
         excerpt = " ".join(raw.split())[:180]
         evidence.append({"id": f"ev-{tid}", "episode_id": str(eid), "episode_title": title,
                          "source": source, "speaker": speaker or "Unattributed transcript speaker",
-                         "uri": uri, "asserted_at": str(day), "kind": "transcript" if valid else "summary_only",
+                         "uri": uri, "asserted_at": str(day), "kind": "transcript" if valid else "transcript_untimed",
                          "segment_id": str(tid), "start_ms": round(start*1000) if valid else None,
                          "end_ms": round(end*1000) if valid else None, "excerpt": excerpt,
                          "segment_digest": digest(raw), "export_digest": export_hash})
@@ -100,4 +100,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

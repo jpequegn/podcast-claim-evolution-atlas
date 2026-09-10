@@ -96,6 +96,7 @@ pub struct Scope {
 #[serde(rename_all = "snake_case")]
 pub enum EvidenceKind {
     Transcript,
+    TranscriptUntimed,
     SummaryOnly,
     Synthetic,
 }
@@ -149,7 +150,7 @@ impl Evidence {
                 matches!((self.start_ms,self.end_ms), (Some(a),Some(b)) if a < b && b <= 86_400_000),
                 "transcript needs valid timestamps",
             )?,
-            EvidenceKind::SummaryOnly => require(
+            EvidenceKind::SummaryOnly | EvidenceKind::TranscriptUntimed => require(
                 self.start_ms.is_none() && self.end_ms.is_none(),
                 "summary cannot claim timestamps",
             )?,
