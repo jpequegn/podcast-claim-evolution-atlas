@@ -1,0 +1,14 @@
+[package]
+name = "claim-cli"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "atlas"
+path = "src/main.rs"
+
+[dependencies]
+claim-core = { path = "../claim-core" }
+serde_json.workspace = true
+clap = { version = "4", features = ["derive"] }
+
