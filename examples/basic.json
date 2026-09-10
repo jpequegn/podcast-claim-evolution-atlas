@@ -1,0 +1,105 @@
+{
+  "version": 1,
+  "title": "Synthetic claim pair",
+  "evidence": [
+    {
+      "id": "ev-1",
+      "episode_id": "fixture-1",
+      "episode_title": "Synthetic evaluation workshop",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-01-01",
+      "kind": "synthetic",
+      "segment_id": "segment-1",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic fixture: the task succeeds under the stated conditions.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    },
+    {
+      "id": "ev-2",
+      "episode_id": "fixture-2",
+      "episode_title": "Synthetic evaluation workshop",
+      "source": "Invented lab A",
+      "speaker": "Synthetic speaker",
+      "uri": "synthetic:fixture-1",
+      "asserted_at": "2026-02-01",
+      "kind": "synthetic",
+      "segment_id": "segment-1",
+      "start_ms": 1000,
+      "end_ms": 5000,
+      "excerpt": "Synthetic fixture: the task succeeds under the stated conditions.",
+      "segment_digest": "0000000000000000000000000000000000000000000000000000000000000000",
+      "export_digest": "0000000000000000000000000000000000000000000000000000000000000000"
+    }
+  ],
+  "claims": [
+    {
+      "id": "claim-1",
+      "statement": "The synthetic task succeeds.",
+      "subject": "task",
+      "predicate": "succeeds",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": true
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-1"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    },
+    {
+      "id": "claim-2",
+      "statement": "The synthetic task does not succeed.",
+      "subject": "task",
+      "predicate": "succeeds",
+      "topic": "agent-harness",
+      "value": {
+        "kind": "boolean",
+        "value": false
+      },
+      "positive": true,
+      "modality": "fact",
+      "stance": "asserted",
+      "scope": {
+        "population": "fixture-agents",
+        "geography": "all",
+        "system": "fixture-v1",
+        "definition": "success-v1",
+        "conditions": [],
+        "assumptions": [],
+        "exclusions": [],
+        "valid_from": "2026-01-01",
+        "valid_to": "2026-12-31"
+      },
+      "evidence_ids": [
+        "ev-2"
+      ],
+      "extractor": "synthetic-author-v1",
+      "confidence_bp": 10000,
+      "sensitivity": "public",
+      "retention": "persistent"
+    }
+  ],
+  "aliases": {}
+}
