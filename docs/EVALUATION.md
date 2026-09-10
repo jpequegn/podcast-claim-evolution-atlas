@@ -20,4 +20,12 @@ All real claims remain unapproved. Unknown scope is explicit, and the determinis
 
 ## Evaluation limits
 
+## Implementation checks
+
+The final local suite has 25 native Rust tests, two Python exporter tests including a Rust import/tamper roundtrip, and one wasm-bindgen test. Native and WASM graph/evaluation outputs match exactly. Browser WASM also returns the 30 expected gold labels, including nine abstentions.
+
+Playwright exercised topic filtering, claim approval, relationship acceptance, rejection of closure without new evidence, successful synthetic closure, review history and local pilot import/export. Screenshots were inspected at 1440x1000 and 390x844. The mobile page had no horizontal overflow, the timeline canvas had nonblank data pixels, and inspected application requests remained local. Screenshots and real pilot exports are ignored rather than published.
+
+## Interpretation limits
+
 The engine cannot infer sarcasm, source independence, causality or semantic entailment. Mark nonliteral language as unclear/quoted/hypothetical during curation. Incorrect structured inputs can still produce incorrect rule outputs. Human review records attribute decisions; they do not authenticate identities or prove a claim true.

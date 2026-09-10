@@ -1,0 +1,13 @@
+{
+  "revision": 0,
+  "action": "approve_claim",
+  "target": "claim-1",
+  "relation": null,
+  "reviewer": "operator",
+  "note": "Synthetic example: inspected scope and evidence",
+  "evidence_ids": [
+    "ev-1"
+  ],
+  "at": "2026-09-10",
+  "elapsed_seconds": null
+}

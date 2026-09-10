@@ -265,9 +265,16 @@ impl Bundle {
             require(evidence.insert(&e.id), "duplicate evidence ID")?;
         }
         let mut ids = BTreeSet::new();
+        let mut contents = BTreeSet::new();
         for c in &self.claims {
             c.validate()?;
             require(ids.insert(&c.id), "duplicate claim ID")?;
+            let mut content = c.clone();
+            content.id.clear();
+            require(
+                contents.insert(hash(&content)),
+                "duplicate claim content and evidence",
+            )?;
             require(
                 c.evidence_ids.iter().all(|e| evidence.contains(e)),
                 "missing evidence",
@@ -283,7 +290,7 @@ impl Bundle {
     }
     pub fn parse(input: &str) -> Result<Self> {
         require(input.len() <= 2_000_000, "bundle exceeds 2 MB")?;
-        let b: Self = serde_json::from_str(input).map_err(|e| Error(e.to_string()))?;
+        let b: Self = crate::strict::parse(input)?;
         b.validate()?;
         Ok(b)
     }

@@ -1,5 +1,6 @@
 import json
 import tempfile
+import subprocess
 import unittest
 from pathlib import Path
 import duckdb
@@ -19,6 +20,17 @@ class ExportTests(unittest.TestCase):
             rows=[json.loads(x) for x in (root/"out/evidence.jsonl").read_text().splitlines()]
             self.assertEqual(rows[0]["kind"],"transcript_untimed")
             self.assertEqual(rows[1]["kind"],"transcript")
+            repo = Path(__file__).resolve().parents[1]
+            claim = json.loads((repo / "examples/basic.json").read_text())["claims"][0]
+            (root / "claims.json").write_text(json.dumps([claim]))
+            command = [str(repo / "target/debug/atlas"), "import", str(root / "out"), str(root / "claims.json"), "--title", "Synthetic import", "--out"]
+            self.assertEqual(subprocess.run(command+[str(root / "valid.json")],capture_output=True).returncode,0)
+            rows[0]["excerpt"] = "Tampered evidence"
+            (root / "out/evidence.jsonl").write_text("".join(json.dumps(r)+"\n" for r in rows))
+            rejected = subprocess.run(command+[str(root / "tampered.json")],capture_output=True)
+            self.assertNotEqual(rejected.returncode,0)
+            self.assertIn(b"evidence content changed",rejected.stderr)
+            self.assertFalse((root / "tampered.json").exists())
             with self.assertRaises(ValueError): export(db,[1],root/"out")
             with self.assertRaises(ValueError): export(db,[2],root/"missing")
             self.assertFalse((root/"missing").exists())
